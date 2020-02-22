@@ -5,19 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
-    />
+    <link rel="stylesheet" href="./css/magnific-popup.css" />
   </head>
   <body>
     <div class="container">
       <!--navbar-->
       <div class="navbar">
         <div class="logo-container">
-          <img class="logo" src="img/logo.png" alt="" height="60px" />
+          <img src="./img/logo.png" alt="" />
         </div>
-        <div class="nav-item-box">
+        <div class="navbar-content">
+          <a href="">PRODUCTS</a>
+          <a href="">CUSTOMERS</a>
+          <a href="">NEWS+EVENTS</a>
+          <a href="">ABOUT US</a>
+        </div>
+      </div>
+      <!--navbar2-->
+      <div class="navbar2">
+        <div class="nav2-logo">
+          <img src="./img/logo.png" alt="" />
+        </div>
+        <div class="nav2-content">
           <a href="">PRODUCTS</a>
           <a href="">CUSTOMERS</a>
           <a href="">NEWS+EVENTS</a>
@@ -26,16 +35,20 @@
       </div>
 
       <!--slider-->
+
       <div
         class="cycle-slideshow slider-div"
         data-cycle-fx="scrollHorz"
         data-cycle-timeout="2000"
         data-cycle-slides="> div"
+        data-cycle-next="#next"
+        data-cycle-prev="#prev"
+        data-cycle-pager="#pager"
       >
         <div class="slider-img-container">
-          <img class="slider-img" src="img/banner_slider_011.jpg" alt="" />
+          <img class="slider-img" src="img/banner_slider_01.jpg" alt="" />
           <div class="slider-content">
-            <div style="margin: 80px 31px 40px;">
+            <div class="content-box">
               <h2>
                 META CONSECTETUS
               </h2>
@@ -45,52 +58,49 @@
               <p>
                 Nulla Voluptatem Pariatur
               </p>
-              <div style="text-align: left; margin-top: 120px;">
-                <button style="color:#1D834E; padding: 10px; font-size: 20px;">
-                  <b style="margin-right: 45px;">LEARN MORE</b>
-                  <img src="img/arrow.png" alt="" />
-                </button>
-              </div>
+            </div>
+            <div class="slider-button-box">
+              <button>
+                <b>LEARN MORE</b>
+                <img src="img/arrow.png" alt="" />
+              </button>
             </div>
           </div>
         </div>
 
         <div class="slider-img-container">
-          <img class="slider-img" src="img/banner_slider_022.jpg" alt="" />
+          <img class="slider-img" src="img/banner_slider_02.jpg" alt="" />
           <div class="slider-content">
-            <div style="margin: 80px 31px 40px;">
+            <div class="content-box">
               <h2>
-                ACCUSANTIUM,ON DOLOREMQUE
+                ACCUSANTIUM, ON DOLOREMQUE
               </h2>
 
               <p style=" margin-top: 30px; ">
                 ccusantium doloremque laudantium, totam rem aperiam, eaque ispa
                 quae ab illo ccusantium doloremque
               </p>
-
-              <div style="text-align: left; margin-top: 40px;">
-                <button style="color:#1D834E; padding: 10px; font-size: 20px;">
-                  <b style="margin-right: 45px;">LEARN MORE</b>
-                  <img src="img/arrow.png" alt="" />
-                </button>
-              </div>
+            </div>
+            <div class="slider-button-box">
+              <button>
+                <b>LEARN MORE</b>
+                <img src="img/arrow.png" alt="" />
+              </button>
             </div>
           </div>
         </div>
       </div>
+
       <!--lifestyle-->
       <div class="lifestyle">
-        <h1 style="color: #1D834E; font-size: 28px;">
+        <h1>
           THE CONNECTED LIFESTYLE
         </h1>
         <div
           style="background-color: #1D834E; height: 2px; margin-top: 5px;"
         ></div>
         <div class="lifestyle-body">
-          <div
-            class="lifestyle-body-box"
-            style="border-right: solid #e1e1e1 2px;"
-          >
+          <div class="lifestyle-body-box">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequuntur hic nobis quaerat
@@ -101,16 +111,14 @@
               sequi eaque, nobis ipsa provident voluptates incidunt tenetur.
               Rerum, sit.
             </p>
-
-            <button>
-              <b style="margin-right: 45px;">LEARN MORE</b>
-              <img src="img/arrow.png" alt="" />
-            </button>
+            <div class="lifestyle-button-box">
+              <button>
+                <b style="margin-right: 50px;">LEARN MORE</b>
+                <img src="img/arrow.png" alt="" />
+              </button>
+            </div>
           </div>
-          <div
-            class="lifestyle-body-box"
-            style="border-right: solid #e1e1e1 2px;"
-          >
+          <div class="lifestyle-body-box">
             <h3>LOREN IPSUM</h3>
             <div
               class="lifestyle-thumb-box"
@@ -128,13 +136,12 @@
               <h3>EXPERIENCE</h3>
               <p>Lorem ipsum, dolor sit amet consectetur</p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                illo voluptatum
+                Lorem ipsum dolor sit amet consectetur adipisicing
               </p>
             </div>
           </div>
           <div class="lifestyle-body-box">
-            <h3>LOREN IPSUM DOLORs</h3>
+            <h3>LOREN IPSUM DOLOR</h3>
             <div
               class="lifestyle-thumb-box"
               style="border-right: solid #e1e1e1 2px"
@@ -151,15 +158,15 @@
               <h3>GROW</h3>
               <p>Lorem ipsum, dolor sit amet consectetur</p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                illo voluptatum
+                Lorem ipsum dolor sit amet consectetur adipisicing elit
               </p>
             </div>
           </div>
         </div>
       </div>
+
       <!--customer and news part-->
-      <div class="customerNews-wrapper">
+      <div class="customer-news-box">
         <!--customer-->
         <div class="customer">
           <h1 style="color: #1d834e;">OUR CUSTOMERS</h1>
@@ -167,10 +174,10 @@
             style="background-color: #1D834E; height: 2px; margin-top: 5px;"
           ></div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-            similique laborum saepe provident iure consectetur earum recusandae
-            sequi tempora, iusto sapiente sed quas quis eligendi deserunt
-            assumenda architecto aperiam dicta!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
+            nesciunt illo accusantium omnis nisi in, tempore corporis quisquam
+            vero ipsa? Aut quod, ut inventore sapiente quos dolorum assumenda.
+            Culpa, ipsa? quos dolorum assumenda. <a>learn more</a>
           </p>
           <div class="customer-col">
             <img src="img/custmr_logo01.png" alt="" />
@@ -183,6 +190,7 @@
             <img src="img/custmr_logo06.png" alt="" />
           </div>
         </div>
+
         <!--news-->
         <div class="news">
           <h1 style="color: #1d834e;">NEWS</h1>
@@ -250,12 +258,12 @@
           <div class="vedio-col">
             <a
               class="vedioplay"
-              href="https://www.youtube.com/watch?v=Ax0G_P2dSBw"
+              href="https://www.youtube.com/watch?v=Ix2fG8qAlbc"
               ><img src="img/video-thumbnail.png" alt=""
             /></a>
             <a
               class="vedioplay"
-              href="https://www.youtube.com/watch?v=WTJSt4wP2ME"
+              href="https://www.youtube.com/watch?v=ftLr7mTD4rA"
               ><img src="img/video-thumbnail.png" alt=""
             /></a>
             <a
@@ -277,63 +285,26 @@
           </p>
         </div>
       </div>
-
-      <!--pops-->
+      <!--footer-->
+      <div class="foot">
+        <div class="foot-content">
+          <a href="">HOME</a>
+          <a href="">PRODUCTS</a>
+          <a href="">CUSTOMERS</a>
+          <a href="">NEWS+EVENTS</a>
+          <a href="">ABOUT US</a>
+        </div>
+        <div class="company-reg">
+          <p>&#169; 2011 Company Name:All Right Reserved</p>
+        </div>
+      </div>
     </div>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="http://malsup.github.com/jquery.cycle2.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-    <script>
-      $(".gimg").magnificPopup({
-        type: "image",
-        gallery: {
-          enabled: true
-        }
-      });
-    </script>
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script src="./js/photo-popup.js"></script>
 
-    <script>
-      $(".vedioplay").magnificPopup({
-        type: "iframe",
-        iframe: {
-          markup:
-            '<div class="mfp-iframe-scaler">' +
-            '<div class="mfp-close"></div>' +
-            '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
-            "</div>", // HTML markup of popup, `mfp-close` will be replaced by the close button
-
-          patterns: {
-            youtube: {
-              index: "youtube.com/", // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
-
-              id: "v=", // String that splits URL in a two parts, second part should be %id%
-              // Or null - full URL will be returned
-              // Or a function that should return %id%, for example:
-              // id: function(url) { return 'parsed id'; }
-
-              src: "https://www.youtube.com/embed/%id%?autoplay=1" // URL that will be set as a source for iframe.
-            },
-            vimeo: {
-              index: "vimeo.com/",
-              id: "/",
-              src: "//player.vimeo.com/video/%id%?autoplay=1"
-            },
-            gmaps: {
-              index: "//maps.google.",
-              src: "%id%&output=embed"
-            }
-
-            // you may add here more sources
-          },
-
-          srcAction: "iframe_src" // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
-        },
-
-        gallery: {
-          enabled: true
-        }
-      });
-    </script>
+    <script src="./js/vedio-popup.js"></script>
   </body>
 </html>
