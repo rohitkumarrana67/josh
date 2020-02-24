@@ -12,6 +12,8 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/*navbar*/
+
 .navbar {
   background-image: url("../img/header_bg.png");
   position: relative;
@@ -241,7 +243,7 @@
 
 @media only screen and (max-width: 880px) {
   .slider-content h2 {
-    font-size: 12px;
+    font-size: 16px;
   }
   .slider-content p {
     display: none;
@@ -251,35 +253,54 @@
     margin-right: 0px;
   }
   .content-box {
-    margin: 40px 20px 20px;
+    margin: 80px 20px 20px;
   }
-}
-
-@media only screen and (max-width: 880px) {
   .slider-div {
     width: 85%;
   }
   .slider-button-box {
-    bottom: 20px;
+    bottom: 80px;
     left: 15px;
   }
   .slider-content button {
-    padding: 2px 8px;
-    font-size: 8px;
+    padding: 4px 8px;
+    font-size: 10px;
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 660px) {
+  .slider-content h2 {
+    font-size: 14px;
+  }
+  .slider-button-box {
+    left: 15px;
+    bottom: 40px;
+  }
+
+  .slider-content button {
+    padding: 2px 6px;
+    font-size: 8px;
+  }
+  .content-box {
+    margin: 60px 20px 20px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
   .slider-content h2 {
     font-size: 10px;
   }
-
-  .content-box {
-    margin: 20px 5px 20px;
-  }
   .slider-button-box {
-    bottom: 20px;
-    left: 5px;
+    left: 10px;
+    bottom: 30px;
+  }
+
+  .slider-content button {
+    padding: 2px 6px;
+    font-size: 8px;
+  }
+  .content-box {
+    margin: 30px 10px 20px;
   }
 }
 
@@ -438,7 +459,7 @@
   color: #1d834e;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1100px) {
   .customer-news-box {
     height: 750px;
   }
@@ -520,14 +541,6 @@
   width: 50%;
 }
 
-.mfp-iframe {
-  height: 360px !important;
-  width: 640px !important;
-  position: absolute !important;
-  margin-left: 100px !important;
-  margin-top: 50px !important;
-}
-
 @media only screen and (max-width: 1040px) {
   .media {
     height: 440px;
@@ -567,7 +580,7 @@
 /*footer*/
 
 .foot {
-  background-image: url(../img/footer_bg.jpg);
+  background-image: url("../img/footer_bg.jpg");
   height: 100px;
   margin-top: 30px;
   padding: 10px auto;
